@@ -1,11 +1,13 @@
 # Algorithms
 
 I love algorithms and I want to use this repo to track my learning journey.
-List of algoritms so far
-Searching Algorithms
+
+List of algoritms so far:
+Searching Algorithms  
 * Linear Search
 * Binary Search
-Sorting Algorithms
+
+Sorting Algorithms  
 * Bubble Sort
 * Selection Sort
 * Insertion Sort
