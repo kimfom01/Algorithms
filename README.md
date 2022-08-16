@@ -14,7 +14,7 @@ Sorting Algorithms
 
 From time to time I will visit this repo and update with any new algorithms I learn
 
-
+Feel free to walk through the project and do whatever you wish 😉
 
 ### In Other News...
 * [Buy Me A Coffee](https://www.buymeacoffee.com/kimfom01)
