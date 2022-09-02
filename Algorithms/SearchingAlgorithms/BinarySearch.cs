@@ -6,37 +6,30 @@ using System.Threading.Tasks;
 
 namespace Algorithms.SearchingAlgorithms
 {
-    public class BinarySearch
+    public class BinarySearch<T>
     {
-        public BinarySearch()
-        {
-
-        }
-
         /// <summary>
         /// Method to search for a given key from an array and specifying whether ascending or descending
         /// </summary>
-        /// <param name="Arr">Array to search from</param>
-        /// <param name="key">key to look for</param>
-        /// <returns>the index of the array if found else -1</returns>
-        public double Search(double[] Arr, double key)
+        /// <param name="Arr">Array to search from.</param>
+        /// <param name="key">Key to look for.</param>
+        /// <returns>The index of the array if found, otherwise -1.</returns>
+        public int Search(T[] Arr, T key)
         {
-            int left, right, middle, key_pos;
-            bool found;
+            int left = 0, right = Arr.Length - 1, middle, key_pos = -1;
+            bool found = false;
 
-            left = 0;
-            right = Arr.Length - 1;
-            found = false;
-            key_pos = -1;
+            Comparer<T> comparer = Comparer<T>.Default;
+
             while (left <= right && found == false)
             {
                 middle = (int)((left + right) / 2);
 
-                if (key < Arr[middle])
+                if (comparer.Compare(key, Arr[middle]) < 0)
                 {
                     right = middle - 1;
                 }
-                else if (key > Arr[middle])
+                else if (comparer.Compare(key, Arr[middle]) > 0)
                 {
                     left = middle + 1;
                 }
