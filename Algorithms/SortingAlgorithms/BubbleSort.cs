@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.SortingAlgorithms
+﻿namespace Algorithms.SortingAlgorithms
 {
     public class BubbleSort<T>
     {
@@ -17,16 +11,16 @@ namespace Algorithms.SortingAlgorithms
         {
             int i, j, size = Arr.Length;
             bool madeSwaps;
-            
+
             Comparer<T> comparer = Comparer<T>.Default;
 
             for (i = 1; i <= size - 1; i++)
             {
                 madeSwaps = false;
-                
+
                 for (j = size - 1; j >= i; j--)
                 {
-                    if (ascending == true)
+                    if (ascending)
                     {
                         if (comparer.Compare(Arr[j - 1], Arr[j]) > 0)
                         {

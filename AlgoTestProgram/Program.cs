@@ -9,7 +9,7 @@ namespace AlgoTestProgram
         {
             int i;
             Random rnd = new Random();
-            BubbleSort<int> stuff = new BubbleSort<int>();
+            InsertionSort<int> stuff = new InsertionSort<int>();
 
             int[] arr = new int[ELEMENTS];
 
