@@ -9,7 +9,7 @@ namespace AlgoTestProgram
         {
             int i;
             Random rnd = new Random();
-            InsertionSort<int> stuff = new InsertionSort<int>();
+            SelectionSort<int> stuff = new SelectionSort<int>();
 
             int[] arr = new int[ELEMENTS];
 
@@ -26,7 +26,7 @@ namespace AlgoTestProgram
 
             Console.WriteLine();
 
-            stuff.Sort(arr, false);
+            stuff.Sort(arr);
 
             Console.Write("After Sort: ");
             foreach (var item in arr)
