@@ -5,9 +5,7 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Algorithms\Algorithms.csproj", "{65182E46-7BB0-4152-A330-2E2AA4C9FE6E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoTestProgram", "AlgoTestProgram\AlgoTestProgram.csproj", "{0821DC30-198A-4A9F-920D-30C021860D38}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Tests", "Algorithms.Tests\Algorithms.Tests.csproj", "{8E933F15-5724-4B7B-87C4-4B8E8401AC73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoTestProgram", "AlgoTestProgram\AlgoTestProgram.csproj", "{0821DC30-198A-4A9F-920D-30C021860D38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{0821DC30-198A-4A9F-920D-30C021860D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0821DC30-198A-4A9F-920D-30C021860D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0821DC30-198A-4A9F-920D-30C021860D38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E933F15-5724-4B7B-87C4-4B8E8401AC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E933F15-5724-4B7B-87C4-4B8E8401AC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E933F15-5724-4B7B-87C4-4B8E8401AC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E933F15-5724-4B7B-87C4-4B8E8401AC73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
