@@ -14,7 +14,7 @@ namespace Algorithms.SearchingAlgorithms
         /// <param name="Arr">Array to search from.</param>
         /// <param name="key">Key to look for.</param>
         /// <returns>The index of the array if found, otherwise -1.</returns>
-        public int Search(T[] Arr, T key)
+        public static int Search(T[] Arr, T key)
         {
             int i = 0, size = Arr.Length;
 
