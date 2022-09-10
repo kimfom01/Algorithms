@@ -1,9 +1,4 @@
 ﻿using Algorithms.SearchingAlgorithms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.Tests.SearchingAlgorithmsTests
 {
@@ -11,7 +6,7 @@ namespace Algorithms.Tests.SearchingAlgorithmsTests
     public class BinarySearchTests
     {
         [Test]
-        public void Search_KeyThatIsPresent_ReturnsIndexOfKey()
+        public void Search_KeyThatExists_ReturnsIndexOfKey()
         {
             int[] numbers = new int[21]
             {
@@ -24,7 +19,7 @@ namespace Algorithms.Tests.SearchingAlgorithmsTests
         }
 
         [Test]
-        public void Search_KeyThatExists_ReturnsMinusOne()
+        public void Search_KeyThatDoesNotExist_ReturnsMinusOne()
         {
             int[] numbers = new int[21]
             {
