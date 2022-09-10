@@ -16,23 +16,21 @@ namespace Algorithms.SearchingAlgorithms
         /// <returns>The index of the array if found, otherwise -1.</returns>
         public static int Search(T[] Arr, T key)
         {
-            int i = 0, size = Arr.Length;
+            int index = 0, size = Arr.Length;
 
             EqualityComparer<T> comparer = EqualityComparer<T>.Default;
 
-            while (i <= size - 1 && !comparer.Equals(Arr[i], key))
+            while (index <= size - 1 && !comparer.Equals(Arr[index], key))
             {
-                i++;
+                index++;
             }
 
-            if (comparer.Equals(Arr[i], key))
-            {
-                return i;
-            }
-            else
+            if (!comparer.Equals(Arr[index], key))
             {
                 return -1;
             }
+            
+            return index;
         }
     }
 }

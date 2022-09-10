@@ -11,7 +11,7 @@ namespace Algorithms.Tests.SearchingAlgorithmsTests
     public class BinarySearchTests
     {
         [Test]
-        public void Search_KeyThatIsPresent_ReturnsIndexOfKey()
+        public void Search_KeyThatExists_ReturnsIndexOfKey()
         {
             int[] numbers = new int[21]
             {
@@ -24,7 +24,7 @@ namespace Algorithms.Tests.SearchingAlgorithmsTests
         }
 
         [Test]
-        public void Search_KeyThatExists_ReturnsMinusOne()
+        public void Search_KeyThatDoesNotExists_ReturnsMinusOne()
         {
             int[] numbers = new int[21]
             {
