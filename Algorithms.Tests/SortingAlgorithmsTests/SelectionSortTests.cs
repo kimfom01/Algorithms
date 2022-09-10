@@ -3,7 +3,7 @@
 namespace Algorithms.Tests.SortingAlgorithmsTests
 {
     [TestFixture]
-    public class BubbleSortTests
+    public class SelectionSortTests
     {
         [Test]
         public void Sort_AscendingOrder()
@@ -11,7 +11,7 @@ namespace Algorithms.Tests.SortingAlgorithmsTests
             string[] names = { "Evie", "Heath", "Felix", "Mohamed", "Kira", "Huerta", "Mae" };
             string[] sortedNames = { "Evie", "Felix", "Heath", "Huerta", "Kira", "Mae", "Mohamed" };
 
-            BubbleSort<string>.Sort(names, true);
+            SelectionSort<string>.Sort(names, true);
 
             Assert.That(names, Is.EqualTo(sortedNames));
         }
@@ -22,7 +22,7 @@ namespace Algorithms.Tests.SortingAlgorithmsTests
             string[] names = { "Evie", "Heath", "Felix", "Mohamed", "Kira", "Huerta", "Mae" };
             string[] sortedNames = { "Mohamed", "Mae", "Kira", "Huerta", "Heath", "Felix", "Evie" };
 
-            BubbleSort<string>.Sort(names, false);
+            SelectionSort<string>.Sort(names, false);
 
             Assert.That(names, Is.EqualTo(sortedNames));
         }
