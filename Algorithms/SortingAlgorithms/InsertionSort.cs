@@ -7,7 +7,7 @@
         /// </summary>
         /// <param name="Arr">Array to sort.</param>
         /// <param name="ascending">Order in which to sort. Default is ascending order but when set to false the array will be sorted in descending order.</param>
-        public void Sort(T[] Arr, bool ascending = true)
+        public static void Sort(T[] Arr, bool ascending = true)
         {
             int i, j, size = Arr.Length;
             T element;

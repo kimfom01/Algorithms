@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.SearchingAlgorithms
+﻿namespace Algorithms.SearchingAlgorithms
 {
     public class LinearSearch<T>
     {
@@ -20,17 +14,14 @@ namespace Algorithms.SearchingAlgorithms
 
             EqualityComparer<T> comparer = EqualityComparer<T>.Default;
 
-            while (index <= size - 1 && !comparer.Equals(Arr[index], key))
+            while (index <= size - 1)
             {
+                if (comparer.Equals(Arr[index], key))
+                    return index;
                 index++;
             }
 
-            if (!comparer.Equals(Arr[index], key))
-            {
-                return -1;
-            }
-            
-            return index;
+            return -1;
         }
     }
 }
