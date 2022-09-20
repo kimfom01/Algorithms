@@ -8,7 +8,7 @@ namespace Algorithms.Tests.SearchingAlgorithmsTests
         [Test]
         public void Search_KeyThatExists_ReturnsIndexOfKey()
         {
-            int[] numbers = new int[21]
+            var numbers = new int[21]
             {
                 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
             };
@@ -21,7 +21,7 @@ namespace Algorithms.Tests.SearchingAlgorithmsTests
         [Test]
         public void Search_KeyThatDoesNotExist_ReturnsMinusOne()
         {
-            int[] numbers = new int[21]
+            var numbers = new int[21]
             {
                 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
             };

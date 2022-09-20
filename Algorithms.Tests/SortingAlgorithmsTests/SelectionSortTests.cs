@@ -11,7 +11,7 @@ namespace Algorithms.Tests.SortingAlgorithmsTests
             string[] names = { "Evie", "Heath", "Felix", "Mohamed", "Kira", "Huerta", "Mae" };
             string[] sortedNames = { "Evie", "Felix", "Heath", "Huerta", "Kira", "Mae", "Mohamed" };
 
-            SelectionSort<string>.Sort(names, true);
+            SelectionSort<string>.Sort(names);
 
             Assert.That(names, Is.EqualTo(sortedNames));
         }
