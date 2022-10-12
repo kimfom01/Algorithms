@@ -12,6 +12,7 @@ List of algoritms so far:
    * Bubble Sort
    * Selection Sort
    * Insertion Sort
+   * QuickSort
 
 From time to time I will visit this repo and update with any new algorithms I learn
 
