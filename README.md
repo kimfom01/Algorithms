@@ -2,7 +2,7 @@
 
 I love algorithms and I want to use this repo to track my learning journey.
 
-List of algoritms so far:
+List of algorithms so far:
 
 1. Searching Algorithms  
    * Linear Search
