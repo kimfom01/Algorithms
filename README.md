@@ -27,6 +27,6 @@ dotnet build
 dotnet test
 ```
 
-From time to time I will visit this repo and update with any new algorithms I learn
+From time to time I will visit this repo and update with any new algorithms I learn 
 
 Feel free to walk through the project and do whatever you wish 😉
