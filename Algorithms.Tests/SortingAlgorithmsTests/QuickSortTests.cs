@@ -7,7 +7,7 @@ namespace Algorithms.Tests.SortingAlgorithmsTests
     {
         [Test]
         public void Sort_AscendingOrder([Random(0, 100, 10, Distinct = true)] int n)
-        {
+        { // Failing test need to refactor code
             var (actual, expected) = GetArrays(n);
 
             int start = 0;
