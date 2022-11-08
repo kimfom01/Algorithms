@@ -6,20 +6,18 @@ namespace Algorithms.Tests.SortingAlgorithmsTests
     public class QuickSortTests
     {
         [Test]
-        public void Sort_AscendingOrder()
+        public void Sort_AscendingOrder([Random(0, 100, 10, Distinct = true)] int n)
         {
-            int[] numbers = { 3, 2, 6, 9, 7, 5, 4, 8, 1 };
-            int[] sortedNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var (actual, expected) = GetArrays(n);
 
             int start = 0;
-            int end = numbers.Length;
+            int end = actual.Length;
+            QuickSort<int>.Sort(actual, start, end);
+            Array.Sort(expected);
 
-
-            QuickSort<int>.Sort(numbers, start, end);
-
-            Assert.That(numbers, Is.EqualTo(sortedNumbers));
+            Assert.AreEqual(actual, expected);
         }
-
+        
         [Test]
         public void Sort_DescendingOrder()
         {
@@ -32,6 +30,21 @@ namespace Algorithms.Tests.SortingAlgorithmsTests
             QuickSort<int>.Sort(numbers, start, end, false);
 
             Assert.That(numbers, Is.EqualTo(sortedNumbers));
+        }
+        
+        private (int[] actual, int[] expected) GetArrays(int n)
+        {
+            var actual = new int[n];
+            var expectedArray = new int[n];
+
+            for (int i = 0; i <= n - 1; i++)
+            {
+                int randNum = Random.Shared.Next(100);
+                actual[i] = randNum;
+                expectedArray[i] = randNum;
+            }
+
+            return (actual, expectedArray);
         }
     }
 }
